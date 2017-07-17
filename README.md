@@ -5,7 +5,8 @@ Package conditinal is go/golang replacement for ternary if/else operator
 Many languages have ternary operator which makes it easy and short to assign value inline, for example
 
 ```
-val := (x==y) ? "Value OK" : "Value not OK" // not the go code :(
+// pseudocode, not the go code :(
+val := (x==y) ? "Value OK" : "Value not OK" 
 ```
 
 Unfortunately, Go doesn't have ternary operator so the shortest way to write this code in go would be
