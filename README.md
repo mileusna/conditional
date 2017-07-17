@@ -32,7 +32,7 @@ This is where conditional package steps in. It provides fuctions that replaces t
 ```Go
 val := conditional.String(x==y, "Value OK", "Value not OK")
 ```
-Package conditional also provides fuction for all go basic types
+Package conditional also provides fuctions for all go basic types
 ```Go
 n := conditional.Int(x==y, 20, 0)
 u := conditional.UInt(true, 23, 15)
