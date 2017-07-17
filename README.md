@@ -27,13 +27,20 @@ if x==y {
 }
 ```
  
-This is where conditional package steps in. It provides fuctions that replace ternary operator for each type in go
+This is where conditional package steps in. It provides fuctions that replaces ternary operator for each basic type in go. We can now write conditional assignment in only one go line:
 
 ```Go
-i := conditional.Int(x==y, 20, 0)
-s := conditional.String(x==y, "Value OK", "Value not OK")
+val := conditional.String(x==y, "Value OK", "Value not OK")
+```
+Package conditional also provides fuction for all go basic types
+```Go
+n := conditional.Int(x==y, 20, 0)
 u := conditional.UInt(true, 23, 15)
+f := conditional.Float64(true, 23.2, 15.1)
 // etc. etc.
+
+// even for interface{}
+i := conditional.Interface(x==y, "Great", 10)
 ```
 Example:
 ```Go
