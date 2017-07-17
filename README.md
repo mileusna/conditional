@@ -17,7 +17,7 @@ if x==y {
     val = "Value OK"
 }
 ```
-or if you prefere more readable and longer version
+or if you prefere perhapse more readable but longer version
 
 ```Go
 var val string
@@ -28,12 +28,12 @@ if x==y {
 }
 ```
  
-This is where conditional package steps in. It provides fuctions that replaces ternary operator for each basic type in go. We can now write conditional assignment in only one go line:
+This is where conditional package steps in. It provides fuctions that replaces ternary operator for each basic type in go. We can now write conditional assignment in only one Go line:
 
 ```Go
 val := conditional.String(x==y, "Value OK", "Value not OK")
 ```
-Package conditional also provides fuctions for all go basic types
+Package conditional also provides fuctions for all Go basic types
 ```Go
 n := conditional.Int(x==y, 20, 0)
 u := conditional.UInt(true, 23, 15)
@@ -53,6 +53,8 @@ import (
 )
 
 func main() {
+    x := 2
+    y := 3
     fmt.Println(conditional.Int(x==y, 20, 0))
     fmt.Println(conditional.String(x==y, "Value OK", "Value not OK"))
     fmt.Println(conditional.UInt(true, 23, 15))
