@@ -41,7 +41,7 @@ Example:
 
     import (
         "fmt"
-        "github.com/mileusna/conditional"
+    	"github.com/mileusna/conditional"
     )
 
     func main() {

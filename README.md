@@ -9,7 +9,7 @@ Many languages have ternary operator which makes it easy and short to assign val
 val := (x==y) ? "Value OK" : "Value not OK" 
 ```
 
-Unfortunately, Go doesn't have ternary operator so the shortest way to write this code in go would be
+Unfortunately, [there is no ternary testing operator in Go](https://golang.org/doc/faq#Does_Go_have_a_ternary_form) so the shortest way to write this code in go would be
 
 ```Go
 val := "Value not OK"
